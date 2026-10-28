@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <title>CABUS — Your everyday, together</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="CABUS overview"><span class="brand-mark">c<span>.</span></span><span>CABUS<span class="brand-sub">Your everyday, together.</span></span></a>
+    <div class="workspace"><span class="workspace-avatar">P</span><div>Personal workspace<small>Interactive preview</small></div></div>
+    <nav aria-label="Main navigation" id="navigation"></nav>
+    <div class="sidebar-bottom"><div class="preview-note"><span class="status-dot"></span> A little progress, every day.<p>Four trackers. One place to make room for what matters.</p></div><button class="utility" id="export-button">Export preview data <span aria-hidden="true">↗</span></button><div class="profile"><span class="avatar">Y</span><div>Your workspace<small>Sample data · local only</small></div><span class="online-dot"></span></div></div>
+  </aside>
+  <main>
+    <div class="topbar"><div class="breadcrumb">My workspace <span>/</span> <strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="preview-badge">LIVE PREVIEW</span><span class="top-date" id="today-date"></span></div></div>
+    <div class="content"><div class="page-heading"><div><h1 id="page-title">Make today count.</h1><p id="page-description">A clear view of your day. A little closer to your goals.</p></div><button class="primary" id="add-button"></button></div>
+    <div class="demo-banner"><span class="demo-dot"></span><span>You’re exploring a preview with sample data. Changes stay in this browser.</span><button id="reset-button">Reset demo</button></div>
+    <div id="page-content"></div>
+    <footer><span>CABUS <span class="muted">/ A little more intentional.</span></span><span>Goals · Tasks · Fitness · Expenses</span></footer></div>
+  </main>
+  <dialog id="editor"><form id="editor-form"><div class="dialog-heading"><h2 id="editor-title"></h2><button type="button" class="icon-button" id="close-editor" aria-label="Close form">×</button></div><div id="editor-fields"></div><p id="form-error" class="form-error" role="alert"></p><div class="form-actions"><button type="button" class="secondary" id="cancel-editor">Cancel</button><button type="submit" class="primary">Save changes</button></div></form></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
